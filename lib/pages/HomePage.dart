@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:grocer_app/widgets/CategoriesWidget.dart';
 import 'package:grocer_app/widgets/PopularItemsWidget.dart';
+import 'package:grocer_app/widgets/ItemsWidget.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -139,6 +140,7 @@ class HomePage extends StatelessWidget {
                   children: [
                     CategoriesWidget(),
                     PopularItemsWidget(),
+                    ItemsWidget(),
                   ],
                 ),
               ),
