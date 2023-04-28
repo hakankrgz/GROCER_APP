@@ -100,7 +100,7 @@ class ItemsWidget extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
-                            "20 \T\L",
+                            "20 TL",
                             style: TextStyle(
                               fontSize: 20,
                               fontWeight: FontWeight.bold,
