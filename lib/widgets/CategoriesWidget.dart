@@ -29,6 +29,19 @@ class CategoriesWidget extends StatelessWidget {
             ],
           ),
         ),
+        SingleChildScrollView(
+          //satır yatay olarak kaydırılabilir
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            children: [
+              //for(int i=1; i<8; i++)
+              Container(
+                margin: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                height: 50,
+              ),
+            ],
+          ),
+        ),
       ],
     );
   }
