@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:grocer_app/pages/HomePage.dart';
 import 'package:grocer_app/pages/SplashScreen.dart';
+import 'package:grocer_app/pages/ItemPage.dart';
 
 void main() {
   runApp(MyApp());
