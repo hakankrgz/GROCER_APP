@@ -138,7 +138,7 @@ class HomePage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     CategoriesWidget(),
-                    PopularItemsWidget(),p
+                    PopularItemsWidget(),
                   ],
                 ),
               ),
