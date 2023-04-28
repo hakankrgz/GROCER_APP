@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:grocer_app/widgets/CategoriesWidget.dart';
+import 'package:grocer_app/widgets/PopularItemsWidget.dart.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -137,6 +138,7 @@ class HomePage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     CategoriesWidget(),
+                    PopularItemsWidget(),p
                   ],
                 ),
               ),
