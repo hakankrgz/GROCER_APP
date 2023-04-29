@@ -123,7 +123,7 @@ class ItemsWidget extends StatelessWidget {
                           ),
                         ],
                       ),
-                    )
+                    ),
                   ],
                 ),
               ),

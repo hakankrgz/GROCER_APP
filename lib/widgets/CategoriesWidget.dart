@@ -33,7 +33,7 @@ class CategoriesWidget extends StatelessWidget {
           //satır yatay olarak kaydırılabilir
           scrollDirection: Axis.horizontal,
           child: Row(
-            //mainAxisAlignment: MainAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.start,
             children: [
               for (int i = 1; i < 8; i++)
                 Container(

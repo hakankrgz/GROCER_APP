@@ -99,7 +99,7 @@ class ItemPage extends StatelessWidget {
                       ),
                     ),
                     Row(
-                      //mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Icon(
                           Icons.star,
@@ -119,7 +119,7 @@ class ItemPage extends StatelessWidget {
                     Padding(
                       padding: EdgeInsets.symmetric(vertical: 20),
                       child: Column(
-                        //crossAxisAlignment: CrossAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
                             "Açıklama",

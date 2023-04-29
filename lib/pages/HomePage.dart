@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:grocer_app/widgets/CategoriesWidget.dart';
 import 'package:grocer_app/widgets/PopularItemsWidget.dart';
 import 'package:grocer_app/widgets/ItemsWidget.dart';
+import 'package:grocer_app/widgets/BottomCartSheet.dart';
+import 'package:sliding_sheet/sliding_sheet.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -27,18 +29,32 @@ class HomePage extends StatelessWidget {
                     Container(
                       padding: EdgeInsets.all(8),
                       decoration: BoxDecoration(
-                          color: Color(0xFF00A368),
-                          borderRadius: BorderRadius.circular(10),
-                          boxShadow: [
-                            BoxShadow(
-                              color: Colors.white.withOpacity(0.5),
-                              blurRadius: 2,
-                            ),
-                          ]),
+                        color: Color(0xFF00A368),
+                        borderRadius: BorderRadius.circular(10),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.white.withOpacity(0.5),
+                            blurRadius: 2,
+                          ),
+                        ],
+                      ),
                       child: Stack(
                         children: [
                           InkWell(
-                            onTap: () {},
+                            onTap: () {
+                              showSlidingBottomSheet(
+                                context,
+                                builder: (context) {
+                                  return SlidingSheetDialog(
+                                    elevation: 8,
+                                    cornerRadius: 16,
+                                    builder: (context, state) {
+                                      return BottomCartSheet();
+                                    },
+                                  );
+                                },
+                              );
+                            },
                             child: Icon(
                               CupertinoIcons.cart,
                               size: 30,
